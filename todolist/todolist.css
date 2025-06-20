@@ -1,0 +1,60 @@
+.add-todo-2-name , .add-todo-2-date{
+    width: 50vh;
+    height: 35px;
+    font-size : 17px;
+    border: 2px solid #000000;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.list-2{
+    display: flex;
+    gap: 20px;
+}
+.adder{
+     background-color: rgb(7, 128, 7);
+    color: white;
+    width :100px;
+    padding: 5px 5px 5px 5px;
+    font-size : 17px;
+}
+.deleter{
+    background-color: red;
+    color: white;
+    width :100px;
+    padding: 5px 5px 5px 5px;
+    font-size : 17px;
+}
+.shower{
+   
+   
+    gap: 90px;
+    font-size: 17px;
+   
+    font-weight: 300;
+    align-items: center;
+ 
+}
+.array-value{
+  
+    font-size: 7px;
+    font-style: italic;
+    color: #888;
+    margin-left: 10px;  
+    margin-right: 10px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    width: fit-content;
+    margin: 2px;
+    display: inline-flex;
+    width: 212px;
+    
+}

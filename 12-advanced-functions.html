@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions </title>
+</head>
+<body>
+    <button class="but-js">Click</button>
+    
+</body>
+<script>
+    /*setTimeout(function(){
+        console.log("timeout");
+    },4000);
+    
+    [
+        'make coffee',
+        'drink coffee',
+        'write code',
+        'test code'
+    ].forEach((value,index)=> {setTimeout(()=> {
+        console.log(value);
+    },1000*index)})//for each loop for array with function having parameter passing
+
+    const arrow= () => {
+        console.log("arrow function");
+    }
+    arrow();*/
+    /*let i=0;
+    const buton = document.querySelector('.but-js');
+   const enter = ()=>{ 
+        console.log("button clicked");
+        if(i===4){ 
+    buton.removeEventListener('click', enter);
+    }
+    i++;
+        
+    };
+   buton.addEventListener('click', enter);
+  
+   
+  
+   buton.addEventListener('dblclick',()=>{ 
+        console.log("button clicked 2");
+    });*/
+    const arr= [1,5,-3,-4,-2,-6,0,2,3,4,5,6,7,8,9,10];
+   const newarr =  arr.filter((value,index) => {
+    // if(value<0){
+    //     return false;
+    // }
+    // else{
+    //     return true;
+    // }
+    return value>=0;
+
+    });
+
+    console.log(newarr);
+    const nextarr = newarr.map((value,index)=>{
+        return (value*2);
+    });
+    const ar = (num1 , num2)=>{
+        return num1*num2;
+    }
+    console.log(ar(3,5));
+    console.log(nextarr);
+    const nextarr2 = newarr.map(value=>value*2);
+    console.log(nextarr2);  //if only 1 paramerter and 1 line of return only is there.
+</script>
+</html>

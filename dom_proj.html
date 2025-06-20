@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <p>YouTube Suscribe Button</p>
+    <button   class="yt-button"     onclick="subscribe()"  >Subscribe</button>
+    <p>Rock Paper Scissors</p>
+    <a href="#">Click Here</a>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping</p>
+    <p>Orders over $40 = FREE shipping</p>
+    <input type="" placeholder="Enter Cost here" class="cost-def" onkeydown="handleKeyDown(event)"></input>
+    <button onclick="total()"  class="calc">Calculate</button>
+    <p id="msg"></p>
+</body>
+</html>
+<script>
+    const button = document.querySelector('.yt-button');
+
+    function subscribe() {
+        
+        if (button.innerHTML === 'Subscribe'){
+            button.innerHTML = 'Subscribed';
+            button.classList.add('is-subscribed');
+            // button.style.backgroundColor = 'rgb(240,240,240)';
+            // button.style.color = 'black';
+            // button.style.width = '100px';
+            button.style.transition = 'width 0.8s ease-in-out , background-color  0.3s ease-in-out';
+           
+        } else {
+            button.innerHTML = 'Subscribe';
+            button.classList.remove('is-subscribed');
+            // button.style.backgroundColor='black';
+            // button.style.color = 'white';
+            //  button.style.width = '90px';
+
+        }
+        
+    };
+    function total() {
+        const cost = document.querySelector('.cost-def').value;
+        let shipping = 0;
+
+        if (cost < 40) {
+            shipping = 10;
+        } else {
+            shipping = 0;
+        }
+
+       const msg= `Total cost including shipping is: $${parseFloat(cost) + shipping}`;
+        document.querySelector('#msg').innerHTML = msg;
+    }
+    function handleKeyDown(event) {
+        if (event.code === 'Enter') {
+            total();
+        }
+    }
+    console.log (button);
+</script>

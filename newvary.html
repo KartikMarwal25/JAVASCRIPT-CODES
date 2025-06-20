@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script>
+        let q=0;
+        function addtwo(){
+            q=q+2;
+            console.log('Cart Quantiy :',q);
+        }
+        function subtwo(){
+            q-=2;
+            console.log('Cart Quantiy :',q);
+        }
+        function addthree(){
+            q=q+3;
+            console.log('Cart Quantiy :',q);
+        }
+        function addfour(){
+            q+=4;
+            console.log('Cart Quantiy :',q);
+        }
+        function addfive(){
+            q+=5;
+            console.log('Cart Quantiy :',q);
+        }
+        function subthree(){
+            q-=3;
+            console.log('Cart Quantiy :',q);
+        }
+        function addcart(){
+            q++;
+            console.log('Cart Quantiy :',q);
+        }
+        function remcart(){
+            q--;
+            console.log('Cart Quantiy :',q);
+        }
+        function reset(){
+            q=0;
+            console.log('Cart Quantiy :',q);
+        }
+        function show(){
+            
+            console.log('Cart Quantiy :',q);
+        }
+    </script>
+</head>
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="show()">Show Quantity</button>
+    <button onclick="addcart()">Add to cart</button>
+    <button onclick="remcart()">Remove from cart</button>
+    <button onclick="addtwo()">+2</button>
+    <button onclick="subtwo()">-2</button>
+    <button onclick="addthree()">+3</button>
+    <button onclick="subthree()">-3</button>
+    <button onclick="addfour()">+4</button>
+    <button onclick="addfive()">+5</button>
+    <button onclick="reset()">Reset Cart</button>
+</body>
+</html>

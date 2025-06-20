@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>CALCULATOR</h3>
+    <p><button onclick="a1()">1</button>
+    <button onclick="a2()">2</button>
+    <button onclick="a3()">3</button>
+    <button onclick="a11()">+</button></p>
+    <p><button onclick="a4()">4</button>
+    <button onclick="a5()">5</button>
+    <button onclick="a6()">6</button>
+    <button onclick="a12()">-</button></p>
+    <p><button onclick="a7()">7</button>
+    <button onclick="a8()">8</button>
+    <button onclick="a9()">9</button>
+    <button onclick="a13()">*</button></p>
+    <p><button onclick="a10()">0</button>
+    <button onclick="a15()">.</button>
+    <button onclick="a16()">=</button>
+    <button onclick="a14()">/</button></p>
+    <button onclick="a17()">Clear</button>
+    <p>Click <a href="/calculator/finalcalculator.html">here</a> for final project</p>
+
+</body>
+<script>
+   
+    let calculation="";
+    function a1(){
+        calculation+="1";
+        console.log(calculation);
+    } 
+    function a2(){
+        calculation+="2";
+        console.log(calculation);
+    }
+    function a3(){
+        calculation+="3";
+        console.log(calculation);
+    }
+    function a4(){
+        calculation+="4";
+        console.log(calculation);
+    }
+    function a5(){
+        calculation+="5";
+        console.log(calculation);
+    }
+    function a6(){
+        calculation+="6";
+        console.log(calculation);
+    }
+    function a7(){
+        calculation+="7";
+        console.log(calculation);
+    }
+    function a8(){
+        calculation+="8";
+        console.log(calculation);
+    }
+    function a9(){
+        calculation+="9";
+        console.log(calculation);
+    }
+    function a10(){
+        calculation+="0";
+        console.log(calculation);
+    }
+    function a11(){
+        calculation+="+";
+        console.log(calculation);
+    }
+    function a12(){
+        calculation+="-";
+        console.log(calculation);
+    }
+    function a13(){
+        calculation+="*";
+        console.log(calculation);
+    }
+    function a14(){
+        calculation+="/";
+        console.log(calculation);
+    }
+    function a15(){
+        calculation+=".";
+        console.log(calculation);
+    }
+    function a16(){
+        calculation=eval(calculation);
+        console.log(calculation);
+    }
+    function a17(){
+        calculation="";
+        console.log("Cleared.");
+    }
+
+</script>
+</html>
